@@ -1,0 +1,139 @@
+#header {
+	background:  #12A5DF;
+	padding-top: 0px;
+}
+
+#renderCanvas {
+   width: 100%;
+   height: 56.25%;
+   touch-action: none;
+				
+ }
+
+.header-1{
+	text-align: center;
+
+	@include hasta(web){
+	padding-top: .5em;
+	padding-bottom: .5em;
+    }
+
+	 
+	@include desde(web){
+	padding-top: 1em;
+	text-align: right;
+	padding-bottom: 1em;
+    }
+}
+#pabellones img map area{
+    display: inline;
+    background:  #12A5DF;
+} 
+
+#pabellones{
+	padding-top: 0px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+#pasillos{
+	display: block;
+	height: auto;
+	width: auto ;
+}
+
+.caja.header-2{
+text-align: center;
+padding-left: 0.2em;
+margin-left: 0em;
+
+}
+
+.caja.header-1{
+text-align: center;
+padding-right: 0.2em;
+margin-right: 0em;
+
+}
+
+.header-2{
+text-align: center;
+@include hasta(web){
+	background: #0D468A;
+	padding-top: .5em;
+	padding-bottom: .5em;
+    }
+
+    @include desde(web){
+	padding-bottom: 2em;
+	padding-top: 2em;
+    }
+
+    @include desde(hd) {
+	padding-bottom: 3em;
+	padding-top: 3em;
+
+    }
+
+}
+
+.menu-principal li:hover{
+
+	border-radius: 10px;
+}
+
+.menu-principal ul{
+
+	border-radius: 10px;
+	text-align: left;
+}
+
+.menu-principal{
+	font-weight: bolder;
+	@include hasta(web){
+
+	@include ed-menuv(   
+  	     $fondo: #0D468A,  // Color de fondo del menu
+		 $color: #fff,  // Color de los enlaces
+		 $hover: darken(#0D468A,15%),  // Color de fondo en hover para los items
+		 $altura: 2.5em,  // Altura de los items del menu
+ 		 $padding: 1.5em,  // Padding de los enlaces
+ 		 $ancho-submenu: 30em  // Ancho del menu (y los submenus)
+    );
+	width: 50%;
+	
+		display: none;
+	}
+
+	@include desde(web){
+		text-align: right;
+		margin-top: 50px;
+		font-size: 1.1em;
+		border-radius: 10px;
+    @include ed-menuh( 
+ 		 $fondo: #0D468A,  // Color de fondo del menu
+ 		 $color: #fff,  // Color de los enlaces
+ 		 $hover: darken(#0D468A,15%),  // Color de fondo para el hover de los items
+ 		 $altura: 5em,  // Altura del menu (de los items)
+ 		 $separacion: 50px,  // Separación entre los enlaces del menu
+  		 $ancho-submenu: 15em  // Ancho de los submenus
+);     
+}
+@include desde(hd){
+    @include ed-menuh( 
+ 		 $fondo: #0D468A,  // Color de fondo del menu
+ 		 $color: #fff,  // Color de los enlaces
+ 		 $hover: darken(#0D468A,15%),  // Color de fondo para el hover de los items
+ 		 $altura: 5em,  // Altura del menu (de los items)
+ 		 $separacion: 70px,  // Separación entre los enlaces del menu
+  		 $ancho-submenu: 15em  // Ancho de los submenus
+);     
+	}
+}
+
+#toggle-menu {
+cursor: pointer;
+text-transform: uppercase;
+color: #fff;
+
+}

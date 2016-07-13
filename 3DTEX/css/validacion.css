@@ -1,0 +1,22 @@
+#pswd_info{
+    color:black;    
+    display: none;
+    font-size: 14px;
+}
+#Varpswd_info{
+    color:black;
+    font-size: 14px;
+    display: none;
+}
+.valid{
+	color:green;
+}
+.invalid{
+    color: red;
+}
+.invalido{
+	border: solid 1px red !important;
+};
+.valido{
+	border: solid 1px green !important;
+}
